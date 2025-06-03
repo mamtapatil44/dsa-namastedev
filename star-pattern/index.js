@@ -45,3 +45,49 @@ function leftRightNumber(n){
 
 leftRightNumber(4)
 console.log("=============================================")
+
+ function rightRightTrianle(n){
+
+    for(let i =0 ; i<n; i++){
+        let row = ''
+     for(let j= 0 ;j <(n-(i+1));j++){
+        row += ' '
+     }
+     for(let k= 0 ;k <(i+1);k++){
+        row += '*'
+     }
+
+
+
+     console.log(row)
+    }
+
+}
+
+rightRightTrianle(4)
+console.log("=============================================")
+
+
+function rightZeroOne(n){
+
+    for(let i =0 ; i<n; i++){
+        let row = ''
+         let toggel =1
+     for(let k= 0 ;k <(i+1);k++){
+        row += toggel;
+        if(toggel == 1){
+            toggel =0;
+        }else{
+            toggel =1;
+        }
+     }
+
+
+
+     console.log(row)
+    }
+
+}
+
+rightZeroOne(5)
+console.log("=============================================")
