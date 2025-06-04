@@ -31,3 +31,22 @@ function palindrom(n) {
 }
 
 console.log("Palindrom", palindrom(121));
+
+
+function reverseNumber(n){
+    if(n === 0) return 0;
+    let nCopy = n;
+    let rev =0;
+    n = Math.abs(n);
+    while(n >0){
+        let last = n %10;
+        rev =(rev *10) + last;
+        n = Math.floor(n/10);
+    }
+
+    return ( nCopy < 0) ? -rev : rev;
+
+}
+
+console.log("reverseNumber", reverseNumber(123));
+console.log("reverseNumber", reverseNumber(-423));
