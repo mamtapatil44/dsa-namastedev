@@ -14,3 +14,16 @@ function maxCOnsucativeOnsCOunt(nums) {
 }
 
 console.log(maxCOnsucativeOnsCOunt([1, 1, 0, 1, 1, 1]));
+
+
+function onlySIgnleValue(nums) {
+    
+    let xor = 0;
+ 
+    for(let i =0 ; i <nums.length; i++){
+     xor = xor ^ nums[i]
+ 
+    }
+    return xor;
+  
+ };

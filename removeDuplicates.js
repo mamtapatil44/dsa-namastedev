@@ -12,7 +12,7 @@ function removeDuplicates(arr) {
 }
 console.log(
   "duplicate numbders",
-  removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4])
+  removeDuplicates([0, 0, 1, 5, 1, 2, 2, 3, 5, 4])
 );
 
 function RemoveElement(arr, value) {
