@@ -13,3 +13,23 @@ function sumarr(n){
 }
 
 console.log("arry smu",sumarr((arr.length - 1)))
+
+
+function sumOddNumbers(n){
+    let isOdd = (arr[n]%2 !==0)
+    if (n === 0) return isOdd ? arr[n] :0;
+        return isOdd ? arr[n] + sumOddNumbers(n-1) : 0 + sumOddNumbers(n-1);
+
+  
+}
+
+console.log("arry odd",sumOddNumbers((arr.length - 1)))
+
+function factorial(n){
+    if(n === 0) return 1;
+
+    return n * factorial(n-1)
+
+}
+
+console.log("factorial==>" ,factorial(5))
